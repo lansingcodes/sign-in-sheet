@@ -19,7 +19,7 @@ article {
   margin-top: 0.2in;
 }
 
-article > header {
+article>header {
   margin-bottom: 0.2in;
 }
 
@@ -75,9 +75,9 @@ sub {
   font-size: 0.8rem;
 }
 
-#eventPrint {
+.eventPrint {
   color: var(--text-color);
-  display: none;
+  display: inline;
   font-family: 'Open Sans', sans-serif;
   font-size: 2rem;
   padding-left: 0.2in;
@@ -91,24 +91,37 @@ sub {
   width: 3in;
 }
 
+.line-number {
+  margin: 0 0.1in -.1in;
+  display: none;
+}
+
+body.show-line-numbers .line-number {
+  display: block;
+}
+
 .row {
   height: 0.35in;
+}
+
+@media screen {
+  main:nth-child(2) .eventPrint {
+    display: none;
+  }
 }
 
 @media print {
   aside {
     display: none;
   }
-
   input[type="text"] {
     display: none;
   }
-
   main {
     border: none;
+    break-inside: avoid;
   }
-
-  #eventPrint {
+  .eventPrint {
     display: inline;
   }
 }
