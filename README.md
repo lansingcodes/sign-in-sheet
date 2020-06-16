@@ -4,6 +4,9 @@ A sign-in sheet for Lansing tech events.
 
 https://lansingcodes.github.io/sign-in-sheet/
 
+## Code of Conduct
+All participants are expected to treat others with respect and follow our [Code of Conduct](https://www.lansing.codes/code-of-conduct/).
+
 ## Instructions
 
 Anything appearing in red (including this message) will not appear in the printed version of this page.
