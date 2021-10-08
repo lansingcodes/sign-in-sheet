@@ -1,4 +1,4 @@
-[@lansingcodes/sign-in-sheet] Copyright (2019=Present) (Humanity Codes, LLC)(“Licensor”)
+[@lansingcodes/sign-in-sheet] Copyright (2019-Present) (Humanity Codes, LLC)(“Licensor”)
 
 Hippocratic License Version Number: 2.1.
 
