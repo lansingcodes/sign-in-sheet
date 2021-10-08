@@ -9,7 +9,6 @@ https://lansingcodes.github.io/sign-in-sheet/
 All participants are expected to treat others with respect and follow our [Code of Conduct](https://www.lansing.codes/code-of-conduct/).
 
 ## Instructions
-
 Anything appearing in red (including this message) will not appear in the printed version of this page.
 
 Type your event name in the red box to the right of the logo. It will be centered correctly in the print version.
@@ -31,3 +30,10 @@ project is exclusively for bug reports and feature requests.
 -   [Facebook](https://www.facebook.com/lansingcodes)
 -   [Website](https://www.lansing.codes)
 -   [Newsletter](http://bit.ly/lansing-codes-newsletter)
+
+
+## License
+
+[Hippocratic 2.1](https://firstdonoharm.dev)
+
+Copyright (c) 2019-Present, Humanity Codes LLC
