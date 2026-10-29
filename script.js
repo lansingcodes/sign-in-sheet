@@ -17,7 +17,7 @@
   const eventInput = document.getElementById('eventInput')
   eventInput.addEventListener('input', function () {
     Array.from(document.getElementsByClassName('eventPrint')).forEach((eventPrint) => {
-      eventPrint.innerHTML = eventInput.value
+      eventPrint.textContent = eventInput.value
     })
   })
 
@@ -32,7 +32,8 @@
   const pageCount = document.getElementById('pageCount')
   pageCount.addEventListener('input', function () {
     const currentPageCount = document.getElementsByTagName('main').length
-    const desiredPageCount = parseInt(pageCount.value)
+    const desiredPageCount = Math.max(1, parseInt(pageCount.value, 10) || 1)
+    pageCount.value = String(desiredPageCount)
     
     // add pages as needed
     cloneElement(document.getElementsByTagName('main')[0], desiredPageCount - currentPageCount)
