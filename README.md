@@ -4,6 +4,15 @@ A sign-in sheet for Lansing tech events.
 
 https://lansingcodes.github.io/sign-in-sheet/
 
+## Contents
+
+- [Code of Conduct](#code-of-conduct)
+- [Instructions](#instructions)
+- [Questions](#questions)
+- [Stay in touch](#stay-in-touch)
+- [Contributing](#contributing)
+- [License](#license)
+
 ## Code of Conduct
 
 All participants are expected to treat others with respect and follow our [Code of Conduct](https://www.lansing.codes/code-of-conduct/).
@@ -31,6 +40,10 @@ project is exclusively for bug reports and feature requests.
 -   [Website](https://www.lansing.codes)
 -   [Newsletter](http://bit.ly/lansing-codes-newsletter)
 
+## Contributing
+
+See the [Contributing Guide](.github/CONTRIBUTING.md) for issue reports, pull
+requests, local testing, and deployment details.
 
 ## License
 
