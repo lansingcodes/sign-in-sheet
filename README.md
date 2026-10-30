@@ -10,6 +10,7 @@ https://lansingcodes.github.io/sign-in-sheet/
 - [Instructions](#instructions)
 - [Questions](#questions)
 - [Stay in touch](#stay-in-touch)
+- [Contributing](#contributing)
 - [License](#license)
 
 ## Code of Conduct
@@ -39,6 +40,10 @@ project is exclusively for bug reports and feature requests.
 -   [Website](https://www.lansing.codes)
 -   [Newsletter](http://bit.ly/lansing-codes-newsletter)
 
+## Contributing
+
+See the [Contributing Guide](.github/CONTRIBUTING.md) for issue reports, pull
+requests, local testing, and deployment details.
 
 ## License
 
