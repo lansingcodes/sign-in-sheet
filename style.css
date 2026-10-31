@@ -89,7 +89,8 @@ sub {
   font-family: 'Open Sans', sans-serif;
   font-size: 2rem;
   padding-left: 0.2in;
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
 .line {
@@ -131,5 +132,6 @@ body.show-line-numbers .line-number {
   }
   .eventPrint {
     display: inline;
+    font-size: 1.25rem;
   }
 }
