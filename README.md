@@ -4,6 +4,26 @@ A sign-in sheet for Lansing tech events.
 
 https://lansingcodes.github.io/sign-in-sheet/
 
+## Digital sign-in prototype
+
+`digital/` is a separate Netlify Forms prototype for issue #14. The existing
+printable sheet remains at the site root. Deploy the repository's files to a
+Netlify site with Forms enabled, then open `/digital/`. The optional `event`
+query parameter pre-fills the event field, for example
+`/digital/?event=Lansing%20Codes%20Meetup`; use that URL to make a QR code for
+the welcome slide. Attendees can edit the event name, so organizers should
+review it before using submissions as an attendance record.
+
+The form collects a name, optional email, and an unchecked newsletter-interest
+flag. It does **not** subscribe anyone automatically. A checked interest flag
+requires an email in the browser. Netlify stores submissions in the site's
+private Forms dashboard, accessible to its team members. The honeypot reduces
+basic automated submissions. This is a demonstration: use fictional data on a
+personal test site. Before using it with attendees, deploy it under a Lansing
+Codes-owned account and settle consent wording, access, retention, deletion,
+spam controls, and the newsletter handoff. The site owner's Netlify plan and
+form limits should be checked before an event.
+
 ## Code of Conduct
 
 All participants are expected to treat others with respect and follow our [Code of Conduct](https://www.lansing.codes/code-of-conduct/).

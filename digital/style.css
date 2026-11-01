@@ -1,0 +1,23 @@
+:root { color-scheme: light; font-family: system-ui, sans-serif; color: #17243d; background: #f4f7fa; }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 2rem 1rem; }
+main { max-width: 36rem; margin: 0 auto; padding: clamp(1.5rem, 5vw, 3rem); background: white; border-radius: 1.25rem; box-shadow: 0 10px 35px #17243d16; }
+.brand { font-size: 1.25rem; letter-spacing: -.04em; }
+.brand strong { color: #cc3b32; }
+.eyebrow { margin-top: 2.5rem; color: #b42b22; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; font-size: .75rem; }
+h1 { margin: .4rem 0 1rem; font-size: clamp(2rem, 8vw, 3rem); line-height: 1.1; text-wrap: balance; }
+.intro, .privacy, .paper { line-height: 1.5; color: #4b586d; }
+.demo { padding: .75rem 1rem; border-radius: .5rem; background: #fff5dd; color: #704d00; font-weight: 650; }
+form { display: grid; gap: .55rem; margin-top: 1.75rem; }
+label { font-weight: 650; }
+label span { font-weight: 400; color: #536177; }
+input[type=text], input[type=email] { width: 100%; min-height: 3rem; padding: .65rem .85rem; border: 1px solid #a8b3c4; border-radius: .5rem; font: inherit; margin-bottom: .7rem; }
+input:focus-visible, button:focus-visible, a:focus-visible { outline: 3px solid #3176d3; outline-offset: 2px; }
+.choice { display: flex; gap: .7rem; align-items: start; line-height: 1.4; font-weight: 500; }
+.choice input { width: 1.2rem; height: 1.2rem; flex: none; margin-top: .15rem; }
+.privacy { font-size: .85rem; margin: .7rem 0; }
+button { min-height: 3rem; border: 0; border-radius: .5rem; background: #b42b22; color: white; font: inherit; font-weight: 700; cursor: pointer; }
+button:hover { background: #8d211a; }
+.paper { font-size: .9rem; margin-top: 1.5rem; }
+.honeypot { display: none; }
+@media (max-width: 420px) { body { padding: 0; } main { min-height: 100vh; border-radius: 0; box-shadow: none; } }
