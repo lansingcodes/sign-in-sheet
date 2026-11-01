@@ -4,6 +4,16 @@ A sign-in sheet for Lansing tech events.
 
 https://lansingcodes.github.io/sign-in-sheet/
 
+## Contents
+
+- [Digital sign-in prototype](#digital-sign-in-prototype)
+- [Code of Conduct](#code-of-conduct)
+- [Instructions](#instructions)
+- [Questions](#questions)
+- [Stay in touch](#stay-in-touch)
+- [Contributing](#contributing)
+- [License](#license)
+
 ## Digital sign-in prototype
 
 `digital/` is a separate Netlify Forms prototype for issue #14. The existing
@@ -15,7 +25,7 @@ review it before using submissions as an attendance record.
 
 ### Move it to a Lansing Codes account
 
-1. Merge CI PR #18, then this prototype PR. Create a Netlify site owned by
+1. Merge documentation PR #16 and CI PR #18, then this prototype PR. Create a Netlify site owned by
    Lansing Codes, connect this repository, set the publish directory to the
    repository root (`.`), and leave the build command empty. A manual deploy
    of the same static files also works.
@@ -38,7 +48,6 @@ private Forms dashboard, accessible to its team members. The honeypot reduces
 basic automated submissions. This is a demonstration: use fictional data on a
 personal test site. Before using it with attendees, settle consent wording,
 access, retention, deletion, spam controls, and the newsletter handoff.
-
 ## Code of Conduct
 
 All participants are expected to treat others with respect and follow our [Code of Conduct](https://www.lansing.codes/code-of-conduct/).
@@ -66,6 +75,10 @@ project is exclusively for bug reports and feature requests.
 -   [Website](https://www.lansing.codes)
 -   [Newsletter](http://bit.ly/lansing-codes-newsletter)
 
+## Contributing
+
+See the [Contributing Guide](.github/CONTRIBUTING.md) for issue reports, pull
+requests, local testing, and deployment details.
 
 ## License
 
