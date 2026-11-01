@@ -17,7 +17,7 @@
   const eventInput = document.getElementById('eventInput')
   eventInput.addEventListener('input', function () {
     Array.from(document.getElementsByClassName('eventPrint')).forEach((eventPrint) => {
-      eventPrint.innerHTML = eventInput.value
+      eventPrint.textContent = eventInput.value
     })
   })
 
@@ -31,8 +31,11 @@
   // update the number of pages
   const pageCount = document.getElementById('pageCount')
   pageCount.addEventListener('input', function () {
+    // Allow the field to be cleared while the organizer types a new count.
+    if (pageCount.value === '') return
     const currentPageCount = document.getElementsByTagName('main').length
-    const desiredPageCount = parseInt(pageCount.value)
+    const desiredPageCount = Math.max(1, parseInt(pageCount.value, 10) || 1)
+    pageCount.value = String(desiredPageCount)
     
     // add pages as needed
     cloneElement(document.getElementsByTagName('main')[0], desiredPageCount - currentPageCount)
@@ -51,6 +54,11 @@
     })
 
     updateLineNumbers()
+  })
+  pageCount.addEventListener('blur', function () {
+    if (pageCount.value === '') {
+      pageCount.value = String(document.getElementsByTagName('main').length)
+    }
   })
 
   // toggle line numbers

@@ -2,6 +2,8 @@
 
 A sign-in sheet for Lansing tech events.
 
+Run `node --test` to check title rendering before publishing changes.
+
 https://lansingcodes.github.io/sign-in-sheet/
 
 ## Code of Conduct
