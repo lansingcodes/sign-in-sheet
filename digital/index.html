@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meetup sign-in prototype · Lansing Codes</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="brand">Lansing <strong>Codes</strong></div>
+      <p class="eyebrow">Digital sign-in prototype</p>
+      <h1>Welcome to the meetup.</h1>
+      <p class="intro">Sign in for today’s event. This prototype uses a private Netlify Forms inbox; organizers would need to deploy it under a Lansing Codes account before accepting real attendee details.</p>
+      <p class="demo">For testing, enter fictional details only.</p>
+      <form name="meetup-sign-in" method="POST" action="/digital/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="meetup-sign-in">
+        <p class="honeypot"><label>Leave this field empty <input type="text" name="bot-field" autocomplete="off"></label></p>
+        <label for="event">Event</label>
+        <input id="event" name="event" type="text" maxlength="100" required value="Lansing Codes meetup">
+        <label for="attendee-name">Your name</label>
+        <input id="attendee-name" name="attendee-name" type="text" autocomplete="name" maxlength="100" required>
+        <label for="email">Email <span>(optional)</span></label>
+        <input id="email" name="email" type="email" autocomplete="email" maxlength="254">
+        <label class="choice"><input id="newsletter" name="newsletter" type="checkbox" value="yes"> I’d like to receive the Lansing Codes monthly newsletter.</label>
+        <p class="privacy">Your name and any email you provide are used to record attendance for this event. Newsletter interest is separate and unchecked by default. A real deployment needs an organizer-approved privacy and retention policy.</p>
+        <button type="submit">Sign in</button>
+      </form>
+      <p class="paper">Prefer paper? Ask an organizer for the printed sign-in sheet.</p>
+    </main>
+  </body>
+</html>

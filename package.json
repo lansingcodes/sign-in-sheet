@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "check": "node --check script.js && html-validate index.html && node --test"
+    "check": "node --check script.js && node --check digital/script.js && html-validate index.html digital/index.html digital/thanks.html && node --test"
   },
   "devDependencies": {
     "html-validate": "10.8.0"
