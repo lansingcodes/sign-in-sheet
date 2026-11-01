@@ -26,7 +26,7 @@ test('page count cannot remove the only sign-in page', () => {
   let updatePages
   const controls = {
     eventInput: { addEventListener() {} },
-    pageCount: { value: '0', addEventListener: (_name, handler) => { updatePages = handler } },
+    pageCount: { value: '0', addEventListener: (name, handler) => { if (name === 'input') updatePages = handler } },
     showLineNumbers: { addEventListener() {} },
   }
   const document = {
@@ -37,5 +37,26 @@ test('page count cannot remove the only sign-in page', () => {
   }
   runInNewContext(readFileSync('script.js', 'utf8'), { document })
   updatePages()
+  assert.equal(controls.pageCount.value, '1')
+})
+
+test('clearing page count while editing does not insert an unwanted leading one', () => {
+  const listeners = {}
+  const controls = {
+    eventInput: { addEventListener() {} },
+    pageCount: { value: '1', addEventListener: (name, handler) => { listeners[name] = handler } },
+    showLineNumbers: { addEventListener() {} },
+  }
+  const document = {
+    getElementById: (id) => controls[id],
+    getElementsByClassName: () => [],
+    getElementsByTagName: () => [{}],
+    querySelectorAll: () => [],
+  }
+  runInNewContext(readFileSync('script.js', 'utf8'), { document })
+  controls.pageCount.value = ''
+  listeners.input()
+  assert.equal(controls.pageCount.value, '')
+  listeners.blur()
   assert.equal(controls.pageCount.value, '1')
 })

@@ -31,6 +31,8 @@
   // update the number of pages
   const pageCount = document.getElementById('pageCount')
   pageCount.addEventListener('input', function () {
+    // Allow the field to be cleared while the organizer types a new count.
+    if (pageCount.value === '') return
     const currentPageCount = document.getElementsByTagName('main').length
     const desiredPageCount = Math.max(1, parseInt(pageCount.value, 10) || 1)
     pageCount.value = String(desiredPageCount)
@@ -52,6 +54,11 @@
     })
 
     updateLineNumbers()
+  })
+  pageCount.addEventListener('blur', function () {
+    if (pageCount.value === '') {
+      pageCount.value = String(document.getElementsByTagName('main').length)
+    }
   })
 
   // toggle line numbers
