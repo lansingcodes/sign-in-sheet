@@ -11,7 +11,7 @@ h1 { margin: .4rem 0 1rem; font-size: clamp(2rem, 8vw, 3rem); line-height: 1.1; 
 form { display: grid; gap: .55rem; margin-top: 1.75rem; }
 label { font-weight: 650; }
 label span { font-weight: 400; color: #536177; }
-input[type=text], input[type=email] { width: 100%; min-height: 3rem; padding: .65rem .85rem; border: 1px solid #a8b3c4; border-radius: .5rem; font: inherit; margin-bottom: .7rem; }
+input[type=text], input[type=email] { width: 100%; min-height: 3rem; padding: .65rem .85rem; border: 1px solid #536177; border-radius: .5rem; font: inherit; margin-bottom: .7rem; }
 input:focus-visible, button:focus-visible, a:focus-visible { outline: 3px solid #3176d3; outline-offset: 2px; }
 .choice { display: flex; gap: .7rem; align-items: start; line-height: 1.4; font-weight: 500; }
 .choice input { width: 1.2rem; height: 1.2rem; flex: none; margin-top: .15rem; }
