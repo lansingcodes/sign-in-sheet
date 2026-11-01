@@ -68,7 +68,7 @@ input[type="text"] {
 }
 
 label[for="showLineNumbers"] {
-  margin-left: 0.3in;
+  margin-left: 2em;
 }
 
 main {

@@ -3,6 +3,7 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 .DS_Store
+node_modules/
 
 # Local Netlify folder
 .netlify
